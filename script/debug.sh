@@ -6,11 +6,11 @@ INIT_DIR="/tmp/initrd_dbg"
 ## Unpack default cpio
 #$PROJ_DIR/script/unpack_cpio.sh $PROJ_DIR/images/default/initramfs.cpio $INIT_DIR
 
-## Update super_modern_service
-#cd super_modern_service
-#./build.sh
-#cp ./super_modern_service.elf64 $INIT_DIR/super_modern_service.elf64
-#cd $PROJ_DIR
+## Update super_ez_kernel.ko
+cd source
+make
+cp ./super_ez_kern.ko $INIT_DIR/super_ez_kern.ko
+cd $PROJ_DIR
 
 ## Update exploit
 cd $PROJ_DIR/exploit
