@@ -7,6 +7,7 @@ qemu-system-x86_64              \
     -initrd initramfs.cpio      \
     -nographic                  \
     -append 'console=ttyS0 loglevel=3 oops=panic panic=-1 quiet kaslr' \
-    -cpu kvm64,+smep            \
+    -cpu kvm64,+smep      \
     -monitor /dev/null          \
+    -s                          \
     2>/dev/null
