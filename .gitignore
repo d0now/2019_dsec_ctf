@@ -2,3 +2,11 @@
 *.zip
 *.tar.gz
 *.gz
+
+*.cmd
+.tmp_versions/
+*.symvers
+*.order
+*.mod.c
+*.mod.o
+*.o
